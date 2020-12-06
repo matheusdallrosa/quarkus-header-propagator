@@ -1,5 +1,14 @@
 # quarkus-header-propagator project
 
+The master branch has an example of a header propagator which 
+uses only CDI beans to handle the request headers, but for this
+we need to use the RequestScope which is a normal scope that will
+be active during the HTTP request.
+
+The thread-local-strategy branch has an example of a header propagator which
+uses the java class ThreadLocal to handle the value of a specific header of the
+request being handled by each thread.  
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .

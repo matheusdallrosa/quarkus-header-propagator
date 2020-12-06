@@ -10,6 +10,6 @@ public class Gateway {
     HeaderPropagator headerPropagator;
 
     public String getHeaderValue() {
-        return headerPropagator.getHeaderValue("x-request-id");
+        return headerPropagator.getHeaderValue();
     }
 }
